@@ -1587,7 +1587,7 @@ async def text_handler(bot: Client, m: Message):
                 keys_string = " ".join([f"--key {key}" for key in keys])
 
             elif "classplusapp" in url:
-                signed_api = f"https://itsgolu-cp-api.vercel.app}"
+                signed_api = f"https://crystalofficial-api.vercel.app/crystalofficial2?url={url}@crystalofficial2&user_id={user_id}"
                 response = requests.get(signed_api, timeout=20)
                 #url = response.text.strip()
                 url = response.json()['url']  
